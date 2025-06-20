@@ -1,0 +1,155 @@
+body {
+  font-family: "Montserrat", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  background: #000;
+  color: #eee;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-top: 35px;
+}
+.controls {
+  font-style: italic;
+  margin-top: 10px;
+  text-align: center;
+}
+.subheading {
+  text-align: center;
+  margin-top:-10px;
+}
+.controls label {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+.control-group {
+  margin: 10px 0;
+}
+
+/* Added CSS for responsive, centered canvas */
+#pendulumCanvas {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  background: #000;
+}
+
+.more-projects {
+  position: relative;
+  padding-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  color:#fff;
+}
+
+.more-projects > a {
+  text-decoration: underline;
+  color:#ff00ff;
+  transition: all .2s ease;
+}
+
+.more-projects > a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+input[type="range"], input[type="checkbox"] {
+  -webkit-appearance: none;
+  background: #ff00ff;
+  border: 1px solid #ff00ff;
+  height: 20px;
+  width: 200px;
+  outline: none;
+  border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #000;
+  border: 2px solid #ff00ff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background: #000;
+  border: 2px solid #ff00ff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  top:6px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input[type="checkbox"]:checked {
+  position: relative;
+  background: #ff00ff;
+}
+
+input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background: #000;
+  border: 2px solid #ff00ff;
+  border-radius: 50%;
+}
+
+.what-is-this {
+  font-size: 14px;
+  margin-top: 15px;
+  color:#ff00ff;
+  text-decoration: underline;
+  transition: all .2s ease;
+}
+
+.what-is-this:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.what-is-this-explained {
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: 5px;
+  max-width: 620px;
+}
+
+a {
+  text-decoration: underline;
+  color:#ff00ff;
+  transition: all .2s ease;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}

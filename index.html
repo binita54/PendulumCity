@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Pendulum City</title>
+<script defer data-domain="zachjordan.io/pendulum-city.html" src="https://plausible.io/js/script.js"></script>
+<link rel="icon" type="image/x-icon" href="img/butterfly.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- Link external CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<h1 id="titleText">Pendulum City</h1>
+<div class="subheading">A small audiovisual encounter with the butterfly effect</div>
+<div class="controls">
+  <div class="control-group">
+    <label for="countSlider">Number of Pendulums:</label>
+    <input type="range" id="countSlider" min="1" max="1000" value="5" step="1" />
+    <span id="countDisplay">5</span>
+  </div>
+  <div class="control-group">
+    <label for="speedSlider">Slow motion (1-100x):</label>
+    <input type="range" id="speedSlider" min="1" max="100" value="1" step="1" />
+    <span id="speedDisplay">1x</span>
+  </div>
+  <div class="control-group">
+    <label for="trailToggle">Show Trails:</label>
+    <input type="checkbox" id="trailToggle" />
+  </div>
+  <div class="control-group">
+    <label for="audioToggle">Enable Audio:</label>
+    <input type="checkbox" id="audioToggle" />
+  </div>
+
+  <div onclick="whatIsThisToggle()" class="what-is-this">
+    What is this?
+  </div>
+  <div class="what-is-this-explained hidden">
+    This project is just a fun way to show the 
+    <a href="https://en.wikipedia.org/wiki/Butterfly_effect" target="_blank">butterfly effect</a> in action. It uses double pendulums to visually and audibly demonstrate how tiny changes can lead to wild, unpredictable outcomes. 
+    Tweak settings like the number of pendulums, speed, and add trails to see the chaos unfold in your own way. Have fun :)
+  </div>
+</div>
+
+<canvas id="pendulumCanvas" width="800" height="600"></canvas>
+
+<div class="more-projects">      
+  Made with <span style="color:#FF073A">&#10084;</span> by <a href="index.html">Binita Ghale</a>
+</div>
+
+<!-- Link external JS -->
+<script src="script.js"></script>
+</body>
+</html>
